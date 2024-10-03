@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+    <h1>Animales</h1>
+
+    {% for colaborador in colaborador_mostrar %}
+    <article>
+        <h2><a href="">{{ colaborador.nombre}}</a> <a href="">{{ colaborador.cargo}}</a></h2>
+        <p>{{ colaborador.text|linebreaksbr }}</p>
+        </article>
+    {% endfor %}
+
+    </body>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+    <h1>Animales</h1>
+    {% for protectora in protectora_mostrar %}
+    <article>
+        <h2><a href="">{{ protectora.nombre}}</a> <a href="">{{ protectora.descripcion}}</a></h2>
+        <p>{{ protectora.text|linebreaksbr }}</p>
+        </article>
+    {% endfor %}
+    </body>
